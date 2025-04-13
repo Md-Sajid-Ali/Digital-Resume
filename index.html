@@ -4,8 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Digital Resume</title>
-  <link rel="icon" type="image/jpg" href="images/favicon.jpg">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </head>
 <body>
   <div class="resume-container">
@@ -14,15 +44,15 @@
       <div class="header-text">
         <h1 style="line-height: 1.5;">MD Sajid Ali Mondal</h1>
 
-        <p style="line-height: 1.5;">B.A. graduate skilled in web development, office automation, and Hardware Networking. with a passion for learning new technologies and contributing to innovative projects.</p>
-        <p style="line-height: 3;"> <strong>Ph :</strong><a href="tel:+919088185993" style="color: black;">+91 9088185993 </a>| <strong>Email :</strong> <a href="mailto:official.sajid2116@gmail.com" style="color: black;">official.sajid2116@gmail.com </a></p>
-       <br>
+        <p style="line-height: 1.5;">B.A. graduate skilled in web development, office automation, and Hardware Networking. 
+          with a passion for learning new technologies and contributing to innovative projects.</p>
+        <p style="line-height: 3;"> <strong>Ph :</strong><a href="tel:+919088185993" style="color: black; text-decoration: none;">+91 9088185993 </a>| <strong>Email :</strong> <a href="mailto:official.sajid2116@gmail.com" style="color: black; text-decoration: none;" style="text-decoration:none">official.sajid2116@gmail.com </a></p>
         <nav>
           <a href="https://github.com/Md-Sajid-Ali" target="_blank">GitHub</a>
-          <a href="www.linkedin.com/in/mdsajid-dev" target="_blank">Linkedin</a>
+          <a href="https://www.linkedin.com/in/mdsajid-dev/" target="_blank">Linkedin</a>
           <a href="https://md-sajid-ali.github.io/portfolio/" target="_blank">Portfolio</a>
           <a href="https://md-sajid-ali.github.io/portfolio/second.html" target="_blank">Certificates</a>
-          <a href="https://md-sajid-ali.github.io/portfolio/second.html#projects" target="_blank">Projects</a>
+          <a href="https://md-sajid-ali.github.io/portfolio/second.html" target="_blank">Projects</a>
           <a href="https://drive.google.com/file/d/1EHk9c39HqIkJf_Ku67z4uZWtLvph9yq-/view?usp=sharing" target="_blank">Download CV</a>
         </nav>
         
@@ -81,19 +111,9 @@
         <a href="https://md-sajid-ali.github.io/Online-Food-Service/" target="_blank">Visit Here</a> </p>
       </section>
 
-
-      <section id="personal">
-        <h2>Personal Details</h2>
-        <p><strong>DOB:</strong> 11.05.2004</p>
-        <p><strong>Address:</strong> North 24 P.G.S, West Bengal, Kol - 700125, India</p>
-        <p><strong>Portfolio:</strong> <a href="https://md-sajid-ali.github.io/portfolio\" target="_blank">Visit Here</a></p>
-      </section>
-    </main>
-
     <footer>
-      &copy; 2025 MD Sajid Ali Mondal
+      <a href="https://md-sajid-ali.github.io/portfolio/index.html" target="_blank" style="text-decoration: none; color: #455;">&copy; 2025 MD Sajid Ali Mondal</a>
     </footer>
   </div>
-  <script src="script.js"></script>
 </body>
 </html>
